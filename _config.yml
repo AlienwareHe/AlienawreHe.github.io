@@ -84,7 +84,9 @@ theme: beantech
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repository: https://github.com/AlienwareHe/Alienware.github.io.git
+  branch: gh-pages
 
 
 # beanTech custom settings
