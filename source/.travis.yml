@@ -15,7 +15,7 @@ after_script:
     - git push --force --quiet "https://${Travis-CI-TOKEN}@${GH_REF}" master:gh-pages # Travis-CI-TOKEN是在Travis中配置token的名称
 branches:
     only:
-        - gh-pages #只检测静态页面分支
+        - blog-src #当hexo源码中有新增的变动时，触发ci，重新编译生成静态文件推送到gh-pages上
 env:
     global:
         - GH_REF: git@github.com:AlienwareHe/Alienware.github.io.git
