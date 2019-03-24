@@ -18,4 +18,4 @@ branches:
         - blog-src #当hexo源码中有新增的变动时，触发ci，重新编译生成静态文件推送到gh-pages上
 env:
     global:
-        - GH_REF: git@github.com:AlienwareHe/Alienware.github.io.git
+        - GH_REF: github.com/AlienwareHe/Alienware.github.io.git
