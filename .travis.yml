@@ -12,7 +12,7 @@ after_script:
     - git config user.email "753458929@qq.com" # 修改email
     - git add .
     - git commit -m "Travis CI Auto Builder"
-    - git push --force --quiet "https://${Travis-CI-TOKEN}@${GH_REF}" master:gh-pages # Travis-CI-TOKEN是在Travis中配置token的名称
+    - git push --force --quiet "https://${Travis_CI_TOKEN}@${GH_REF}" master:gh-pages # Travis-CI-TOKEN是在Travis中配置token的名称
 branches:
     only:
         - blog-src #当hexo源码中有新增的变动时，触发ci，重新编译生成静态文件推送到gh-pages上
